@@ -1,3 +1,4 @@
+from turtle import title
 from django.db import models
 
 # Create your models here.
@@ -13,3 +14,5 @@ class Categoria(models.Model):
     descricao_cat = models.TextField()
     imagem_cat = models.URLField()
 
+def __str__(self):
+    return self.titulo

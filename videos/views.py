@@ -11,3 +11,4 @@ def index(request):
 def videos(request):
     video = Video.objects.all()
     return render(request, 'videos.html', {'video':video})
+
