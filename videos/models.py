@@ -11,5 +11,5 @@ class Video(models.Model):
 class Categoria(models.Model):
     titulo_cat = models.CharField(max_length=100)
     descricao_cat = models.TextField()
-    video_cat = models.URLField()
-    
+    imagem_cat = models.URLField()
+

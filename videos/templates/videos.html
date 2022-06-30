@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ video.titulo }}</title>
+</head>
+<body>
+    {% for video in video %}
+    <div class="card" style="width: 15rem; margin: 1 em;">
+        <img class="video-image" src=" {{ video.imagem }}" alt="{{video.titulo}}">
+        <div class="card-body">
+            <h5 class="card-title">{{ video.titulo }}</h5>
+            <p class="card-text">{{ video.descricao }}</p>
+            <p class="button">{{video.qtd_vizu}}</p>
+        </div>
+        <video src="{{ video.video }}" alt="{{video.titulo}}"></video>
+    </div>
+{% endfor %}
+</body>
+</html>
