@@ -2,6 +2,7 @@ from django.shortcuts import render
 from videos.models import Categoria,Video
 
 
+
 # Create your views here.
 def index(request):
     categoria = Categoria.objects.all()
